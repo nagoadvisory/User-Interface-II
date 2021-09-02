@@ -68,7 +68,7 @@ margin: 10px;
 }
 
 h1 {
-font-size: 32px;
+font-size: 60px;
 font-family: 'Chelsea Market', cursive;
 }
 
@@ -82,7 +82,7 @@ font-weight: bold;
 }
 
 section{
-padding:4% 0;
+padding:1% 0;
 }
 
 
@@ -98,8 +98,6 @@ padding:4% 0;
     justify-content: space-between;
     padding: 1%;
 }
-
-/**** Need to center name on height */
 .Name {
     display: flex;
     align-self: center;
@@ -117,7 +115,6 @@ padding:4% 0;
     height: 10vf;
     width: 40%; */
     border: green 2px solid;
-
 }
 
 nav a {
@@ -127,6 +124,58 @@ nav a {
     width: 100%;
     /* height: 10vh; */
 }
+/* Main Picture + Name section */
+#mainfocus {
+    height:30vh;
+    background-image:url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2698&q=80');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0 5%;
+}
 
-/**Need to add buttons and spacing above */
+.titles {
+    color: black;
+}
 
+.myprojects {
+    display: inline-block;
+    border: black 5pt solid;
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+/* Row with 1st Three Projects */
+#Projects {
+    display:flex;
+    border: silver 5px solid;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+.box {
+    padding: 0 1%;
+    width: 30%;
+    height: 100%;
+}
+
+/* Row with 2nd Three Projects */
+#Projects2 {
+    display:flex;
+    border: silver 5px solid;
+    justify-content: space-evenly;
+}
+
+/* #Projects .box {
+    padding: 0 1%;
+    width: 100%;
+    height: 30vf;
+    position: relative;
+}
+
+/* Footer */
+
+.footer-content {
+    height: 5vf;
+    padding: 5%;
+    background-color: skyblue;
+}
