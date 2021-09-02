@@ -70,6 +70,7 @@ margin: 10px;
 h1 {
 font-size: 60px;
 font-family: 'Chelsea Market', cursive;
+flex
 }
 
 a {
@@ -93,7 +94,7 @@ padding:1% 0;
     display: flex;
     width: 100%;
     align-items: center;
-    border: black 10px solid;
+    /* border: black 10px solid; */
     height: 10vh;
     justify-content: space-between;
     padding: 1%;
@@ -101,20 +102,20 @@ padding:1% 0;
 .Name {
     display: flex;
     align-self: center;
-    width: 20%;
+    min-width: 20%;
+    padding-left: 1%;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .headerlinks{
-    width: 40%;
     align-items: center;
     display: flex;
-    justify-content: stretch;
-    min-width: 5%;
-    /* display: flex;
-    justify-content: flex-end;
-    height: 10vf;
-    width: 40%; */
-    border: green 2px solid;
+    justify-content:center;
+    min-width: 45%;
+    /* border: green 2px solid; */
 }
 
 nav a {
@@ -132,50 +133,113 @@ nav a {
     background-repeat:no-repeat;
     background-position:center;
     margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 .titles {
+    display: flex;
+    justify-content: center;
     color: black;
+    align-content: center;
 }
-
 .myprojects {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border: black 5pt solid;
     padding: 1%;
     background-color: whitesmoke;
 }
 
-/* Row with 1st Three Projects */
-#Projects {
+/* Row with 1st Three Projects, followed by next 3, followed by images. I used background images  */
+.Projects {
     display:flex;
-    border: silver 5px solid;
-    justify-content: space-evenly;
-    height: 30vh;
+    /* border: silver 5px solid; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
 }
-.box {
-    padding: 0 1%;
-    width: 30%;
-    height: 100%;
-}
-
-/* Row with 2nd Three Projects */
-#Projects2 {
-    display:flex;
-    border: silver 5px solid;
-    justify-content: space-evenly;
-}
-
-/* #Projects .box {
-    padding: 0 1%;
+.Projects div{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 30vf;
-    position: relative;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    margin: 1%;
 }
 
-/* Footer */
+.Projects2 {
+    display:flex;
+    /* border: silver 5px solid; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.Projects2 div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.boxA {
+    background-image:url('https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');
+} 
+
+.boxB {
+    background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxC {
+    background-image: url('https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxD {
+    background-image:url('https://images.unsplash.com/photo-1583511666445-775f1f2116f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+} 
+
+.boxE {
+    background-image: url('https://images.unsplash.com/photo-1583512603806-077998240c7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxF {
+    background-image: url('https://images.unsplash.com/photo-1598628461950-268968751a2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80') ;
+}
+
+/*footer*/
 
 .footer-content {
     height: 5vf;
-    padding: 5%;
+    margin-top: 3%;
+    padding: 2%;
     background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    /* border: black 10px solid; */
 }
+
+/* .sociallinks {
+    border: pink 5px solid;
+    width: 30% 
+} */
+
+.footerbutton {
+    display: flex;
+    justify-items: center;
+    /* border: green solid 1px; */
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+
