@@ -1,1 +1,132 @@
 /* Add CSS styling here */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    /* border: 0; removed due to Instructor preferences*/
+    }
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+    }
+/*removed per Brit instructions     
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+    } */
+
+ol, ul {
+    list-style: none;
+    }
+/* tables still need cellspacing="0" in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    }
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+    }
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    }
+blockquote, q {
+    quotes: "" "";
+    }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%
+} /* <-- this last piece Brit Hemming Preferred Start */
+
+
+/* General Styles per Brit Hemming */
+html{
+font-size:62.5%;
+}
+
+body {
+font-size: 1.6rem;
+line-height: 1.5;
+font-family: 'Roboto Mono', monospace;
+text-align: center;
+color: #4f4f4f;
+margin: 10px;
+}
+
+h1 {
+font-size: 32px;
+font-family: 'Chelsea Market', cursive;
+}
+
+a {
+font-family: 'Roboto Mono', monospace;
+text-decoration: none;
+}
+
+span {
+font-weight: bold;
+}
+
+section{
+padding:4% 0;
+}
+
+
+/* finished fonts */
+
+/* Title + Header */
+.topcontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: black 10px solid;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+/**** Need to center name on height */
+.Name {
+    display: flex;
+    align-self: center;
+    width: 20%;
+}
+
+.headerlinks{
+    width: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: stretch;
+    min-width: 5%;
+    /* display: flex;
+    justify-content: flex-end;
+    height: 10vf;
+    width: 40%; */
+    border: green 2px solid;
+
+}
+
+nav a {
+    padding: 0 2%;
+    align-content: center;
+    border: black solid 5px;
+    width: 100%;
+    /* height: 10vh; */
+}
+
+/**Need to add buttons and spacing above */
+
