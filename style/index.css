@@ -1,1 +1,291 @@
 /* Add CSS styling here */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    /* border: 0; removed due to Instructor preferences*/
+    }
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+    }
+/*removed per Brit instructions     
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+    } */
+
+ol, ul {
+    list-style: none;
+    }
+/* tables still need cellspacing="0" in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    }
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+    }
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    }
+blockquote, q {
+    quotes: "" "";
+    }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%
+} /* <-- this last piece Brit Hemming Preferred Start */
+
+
+/* General Styles per Brit Hemming */
+html{
+font-size:62.5%;
+}
+
+body {
+font-size: 1.6rem;
+line-height: 1.5;
+font-family: 'Roboto Mono', monospace;
+text-align: center;
+color: #4f4f4f;
+margin: 10px;
+}
+
+h1 {
+font-size: 60px;
+font-family: 'Chelsea Market', cursive;
+}
+
+a {
+font-family: 'Roboto Mono', monospace;
+text-decoration: none;
+}
+
+span {
+font-weight: bold;
+}
+
+section{
+padding:1% 0;
+}
+
+
+/* finished fonts */
+
+
+
+/* Title + Header */
+.topcontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* border: black 10px solid; */
+    height: 10vh;
+    justify-content: space-between;
+    padding: 1%;
+}
+.Name {
+    display: flex;
+    align-self: center;
+    min-width: 20%;
+    padding-left: 1%;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.headerlinks{
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    min-width: 45%;
+    /* border: green 2px solid; */
+}
+
+nav a {
+    padding: 0 2%;
+    align-content: center;
+    border: black solid 5px;
+    width: 100%;
+    /* height: 10vh; */
+}
+/* Main Picture + Name section */
+#mainfocus {
+    height:30vh;
+    background-image:url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2698&q=80');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titles {
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-content: center;
+}
+.myprojects {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: black 5pt solid;
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+/* Row with 1st Three Projects, followed by next 3, followed by images. I used background images  */
+.Projects {
+    display: flex;
+    /* border: silver 5px solid; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1%;
+}
+.Projects div{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.Projects2 {
+    display:flex;
+    /* border: silver 5px solid; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.Projects2 div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+div[class^="box"] {
+    width: 100%!important;
+    height: 30vh !important;
+}
+
+.boxA {
+    background-image:url('https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');
+} 
+
+.boxB {
+    background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxC {
+    background-image: url('https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxD {
+    background-image:url('https://images.unsplash.com/photo-1583511666445-775f1f2116f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+} 
+
+.boxE {
+    background-image: url('https://images.unsplash.com/photo-1583512603806-077998240c7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60') ;
+}
+
+.boxF {
+    background-image: url('https://images.unsplash.com/photo-1598628461950-268968751a2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80') ;
+}
+
+/*footer*/
+
+.footer-content {
+    height: 5vf;
+    margin-top: 3%;
+    padding: 2%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    /* border: black 10px solid; */
+}
+
+/* .sociallinks {
+    border: pink 5px solid;
+    width: 30% 
+} */
+
+.footerbutton {
+    display: flex;
+    justify-items: center;
+    /* border: green solid 1px; */
+    padding: 1%;
+    background-color: whitesmoke;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .Name {
+        padding-left:0;
+    }
+    .topcontainer{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .headerlinks {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .Name {
+        padding-left:0;
+    }
+    .topcontainer{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .headerlinks {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .projects div {
+        width: 45%;
+        font-size: 1em;
+    }
+}
